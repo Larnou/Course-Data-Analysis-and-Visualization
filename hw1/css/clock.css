@@ -1,0 +1,36 @@
+.clock {
+    color: #e8d3be;
+    filter: drop-shadow(0 0 8px);
+}
+
+.clock__background {
+    stroke: white;
+    stroke-width: 12px;
+    fill: #eebf8e;
+}
+
+.clock__hour {
+    stroke-width: 3px;
+    stroke: white;
+}
+
+.clock__second {
+    stroke-width: 2px;
+    stroke: white;
+}
+
+.clock__minute {
+    stroke-width: 4px;
+    stroke: white;
+}
+
+.clock__point {
+    stroke: #d99955;
+    fill: white;
+    stroke-width: 2px;
+}
+
+.clock__indicator {
+    stroke-width: 2px;
+    stroke: white;
+}

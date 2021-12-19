@@ -1,0 +1,15 @@
+rect{ display: none;}
+.left-eye:active{display: none;}
+.left-eye:active + rect{ display: block; }
+
+.checker__text {
+    font-size: 35px;
+}
+
+.checker {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-column-gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}

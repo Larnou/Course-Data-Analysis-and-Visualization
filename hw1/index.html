@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>ПРАКТИКА 1</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clock.css">
+</head>
+    <body>
+        <h1> My happy face for today</h1>
+        <svg width="500" height="300">
+            <g>
+               <circle cx="250" cy="150" r="150" fill="yellow">
+                </circle>
+                <ellipse cx="300" cy="100" rx="25" ry="50"
+                    fill="black"></ellipse>
+                <path class="smile" stroke="black" fill="none"
+                    d="M 150 200 Q 225 300 300 200">
+                </path>
+                <ellipse class="left-eye" cx="175" cy="110" rx="25" ry="50"
+                    fill="black">
+                </ellipse>
+                <rect x="150" y="100" width="50" height="25"
+                    fill="black"></rect>
+            </g>
+        </svg>
+        <label class="checker">
+            <p class="checker__text">Happy</p>
+            <input type="checkbox" class="checker__input">
+        </label>
+
+        <h1> It's high noon somewhere in the world</h1>
+        <svg width="200" height="200" class="clock">
+            <circle class="clock__background" cx="100" cy="100" r="80"></circle>
+            <g>
+                <line x1="100" y1="100" x2="100" y2="55" class="clock__hour">
+                    <animatetransform attributeName="transform"
+                                      attributeType="XML"
+                                      type="rotate"
+                                      dur="43200s"
+                                      repeatCount="indefinite"/>
+                </line>
+                <line x1="100" y1="100" x2="100" y2="40" class="clock__minute">
+                    <animatetransform attributeName="transform"
+                                      attributeType="XML"
+                                      type="rotate"
+                                      dur="3600s"
+                                      repeatCount="indefinite"/>
+                </line>
+                <line x1="100" y1="100" x2="100" y2="30" class="clock__second">
+                    <animatetransform attributeName="transform"
+                                      attributeType="XML"
+                                      type="rotate"
+                                      dur="60s"
+                                      repeatCount="indefinite"/>
+                </line>
+            </g>
+            <circle class="clock__point" cx="100" cy="100" r="3"></circle>
+        </svg>
+
+
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/clock.js"></script>
+    </body>
+</html>
